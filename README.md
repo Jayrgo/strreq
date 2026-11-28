@@ -13,9 +13,9 @@ user-facing fields such as usernames and passwords.
 
 ```go
 req := strreq.Requirements{
-    MinLength: 8,
-    MinUpper:  1,
-    MinNumber: 1,
+    MinLength:    8,
+    MinUpper:     1,
+    MinNumber:    1,
     InvalidChars: " ",
 }
 ok := req.IsValid("Secret12")
