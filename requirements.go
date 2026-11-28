@@ -6,16 +6,16 @@ import (
 )
 
 type Requirements struct {
-	MinLength int `toml:"minLength"`
-	MaxLength int `toml:"maxLength"`
+	MinLength int `toml:"min_length"`
+	MaxLength int `toml:"max_length"`
 
-	MinLetter int `toml:"minLetter"`
-	MinLower  int `toml:"minLower"`
-	MinUpper  int `toml:"minUpper"`
-	MinNumber int `toml:"minNumber"`
+	MinLetter int `toml:"min_letter"`
+	MinLower  int `toml:"min_lower"`
+	MinUpper  int `toml:"min_upper"`
+	MinNumber int `toml:"min_number"`
 
-	ValidChars   string `toml:"validChars"`
-	InvalidChars string `toml:"invalidChars"`
+	ValidChars   string `toml:"valid_chars"`
+	InvalidChars string `toml:"invalid_chars"`
 }
 
 func (r Requirements) IsValid(s string) bool {
